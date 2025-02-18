@@ -1,16 +1,21 @@
-import './App.css';
-import Button from './components/Button/Button';
-import Popper from './components/Popper/Popper';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from '~/pages/Home/Home';
+import News from '~/pages/News/News';
+import Contact from '~/pages/Contact/Contact';
+import DefautLayout from './components/Layout/DefaultLayout';
 function App() {
-	function handClick() {
-		alert('xuan');
-	}
 	return (
-		<div className='App'>
-			<Button onClick={handClick}>Đăng kí</Button>
-			<Popper />
-		</div>
+		<Router>
+			<div className='App'>
+				<DefautLayout>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/news' element={<News />} />
+						<Route path='/contact' element={<Contact />} />
+					</Routes>
+				</DefautLayout>
+			</div>
+		</Router>
 	);
 }
 

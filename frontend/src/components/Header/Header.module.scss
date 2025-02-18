@@ -1,0 +1,37 @@
+.wrapper {
+	height: var(--default-layout-header-height);
+	box-shadow: 0px 1px 1px rgb(0 0 0/12%);
+	z-index: 3;
+	position: sticky;
+	display: flex;
+	justify-content: center;
+}
+.inner {
+	height: 100%;
+	width: 100%;
+	background-color: var(--primary);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 200px;
+}
+.logo {
+	cursor: pointer;
+	color: white;
+}
+.right {
+	display: flex;
+	list-style-type: none;
+	li {
+		float: left;
+	}
+	li a {
+		display: block;
+		color: white;
+		padding: 12px 32px;
+		text-decoration: none;
+		font-size: 1.75rem;
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+}
