@@ -1,0 +1,9 @@
+.container {
+	background-color: var(--white);
+	border-radius: 35px;
+	position: relative;
+	width: var(--card-content-width);
+	height: 500px;
+	z-index: 5;
+	display: flex;
+}

@@ -5,7 +5,7 @@ export default function DefautLayout({ children }) {
 	return (
 		<>
 			<Header></Header>
-			<div>{children}</div>
+			<div className='content'>{children}</div>
 			<Footer></Footer>
 		</>
 	);

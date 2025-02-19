@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '~/pages/Home/Home';
+import About from '~/pages/About/About';
 import News from '~/pages/News/News';
 import Contact from '~/pages/Contact/Contact';
 import DefautLayout from './components/Layout/DefaultLayout';
+
 function App() {
 	return (
 		<Router>
@@ -10,6 +12,7 @@ function App() {
 				<DefautLayout>
 					<Routes>
 						<Route path='/' element={<Home />} />
+						<Route path='/about' element={<About />} />
 						<Route path='/news' element={<News />} />
 						<Route path='/contact' element={<Contact />} />
 					</Routes>
